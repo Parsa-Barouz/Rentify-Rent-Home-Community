@@ -10,13 +10,22 @@ function Navbar() {
                 <div className="btn flex items-center gap-3">
 
 
-                    <div className="Advertisement-registration">
+                    <div className="Advertisement-registration bg-[#0D6EFD] px-3 py-3 flex items-center gap-2 cursor-pointer">
 
-                        <button className='cursor-pointer bg-[#0D6EFD] px-5 py-3 rounded-lg'>ثبت اگهی رایگان</button>
+                        <button className='cursor-pointer  rounded-lg'>ثبت اگهی رایگان</button>
+                        <div className="IconPlus">
 
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33325 14.6666V1.33331H8.66659V14.6666H7.33325Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.66665H1.33325V7.33331H14.6666V8.66665Z" fill="white" />
+                            </svg>
+
+
+                        </div>
 
                     </div>
                     <div className="singup">
+
                         <button className='cursor-pointer'>ورود/ثبت نام</button>
                     </div>
                 </div>
