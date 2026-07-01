@@ -1,7 +1,10 @@
 import React from 'react'
-import img1Family from './assets/images/wmremove-transformed.jpeg'
+// import img1Family from './assets/images/wmremove-transformed.jpeg'
+import img1Family from './assets/images/Frame 427320688(1).png'
 import Navbar from './Navbar'
 import Selector from './Selector'
+import CardHeader from './CardHeader'
+import cards from './Data'
 export default function Header() {
   return (
 
@@ -12,8 +15,8 @@ export default function Header() {
 
 
         <div className='bakimg ' >
-
-          <img className='w-full h-[80vh] object-fill rounded-b-4xl ' style={{ filter: "brightness(0.07)", opacity: 0.8 }} src={img1Family} alt="" />
+{/* style={{ filter: "brightness(0.07)", opacity: 0.8 }} */}
+          <img className='w-full h-[80vh] object-fill rounded-b-4xl '  src={img1Family} alt="" />
 
           <div className='absolute top-0 left-0 w-full z-10'>
 
@@ -34,6 +37,28 @@ export default function Header() {
 
 
             <Selector />
+
+     
+
+{
+
+
+cards.map((card) => {
+  return (
+    <CardHeader
+      key={card.title}
+      image={card.image}
+      title={card.title}
+      count={card.count}
+    />
+  );
+})
+
+}
+
+
+
+
           </div>
 
 

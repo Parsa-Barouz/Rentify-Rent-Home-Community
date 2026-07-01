@@ -41,7 +41,7 @@ export default function Selector() {
 
 
     <div className="w-[40%] h-[90px] mx-auto mt-10 bg-white rounded-full flex overflow-hidden">
-      <button className="px-12 bg-blue-600 text-white font-bold hover:bg-blue-700 transition cursor-pointer flex items-center gap-2">
+      <button className="px-12 bg-[#0D6EFD] text-white font-bold hover:bg-blue-700 transition cursor-pointer flex items-center gap-2">
 
         <svg
           width="20"

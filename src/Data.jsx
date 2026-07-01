@@ -37,3 +37,25 @@ export const propertyTypes = [
   { value: "penthouse", label: "پنت‌هاوس" },
   { value: "house", label: "خانه" },
 ]
+import img1 from "./assets/images/Frame 427320687(1).png";
+import img2 from "./assets/images/Frame 427320687.png";
+import img3 from "./assets/images/Frame 427320688.png";
+
+export const cards = [
+  {
+    image: img3,
+    title: "ویلا",
+    count: 92,
+  },
+  {
+    image: img2,
+    title: "آپارتمان",
+    count: 54,
+  },
+  {
+    image: img1,
+    title: "خانه ویلایی",
+    count: 18,
+  },
+];
+
