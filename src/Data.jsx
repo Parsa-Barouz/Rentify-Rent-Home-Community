@@ -17,8 +17,8 @@ export const cities = [
 ];
 
 
-export const Contract_type = [
-  { value: "rahn", label: "رهن" },,
+export const Contracttype = [
+  { value: "rahn", label: "رهن" },
   { value: "ajareh", label: "اجاره" },
   { value: "kharid", label: "خرید" },
 ];
@@ -37,6 +37,9 @@ export const propertyTypes = [
   { value: "penthouse", label: "پنت‌هاوس" },
   { value: "house", label: "خانه" },
 ]
+
+
+
 import img1 from "./assets/images/Frame 427320687(1).png";
 import img2 from "./assets/images/Frame 427320687.png";
 import img3 from "./assets/images/Frame 427320688.png";
