@@ -40,12 +40,12 @@ function Navbar() {
                         <div className="listitem">
 
 
-                            <ul className='flex items-center gap-5 '>
+                            <ul className='flex items-center gap-5 max-[880px]:hidden '>
 
-                                <li className='cursor-pointer max-lg:hidden' > <a href="#">   رهن و اجاره خانه  </a></li>
-                                <li className='cursor-pointer max-lg:hidden' > <a href="#">    مشاورین املاک </a></li>
-                                <li className='cursor-pointer max-lg:hidden' > <a href="#">   بلاگ رنتی فای  </a></li>
-                                <li className='cursor-pointer max-lg:hidden' > <a href="#">    درباره رنتی فای </a> </li>
+                                <li className='cursor-pointer ' > <a href="#">   رهن و اجاره خانه  </a></li>
+                                <li className='cursor-pointer' > <a href="#">    مشاورین املاک </a></li>
+                                <li className='cursor-pointer' > <a href="#">   بلاگ رنتی فای  </a></li>
+                                <li className='cursor-pointer' > <a href="#">    درباره رنتی فای </a> </li>
 
                             </ul>
 
@@ -87,7 +87,7 @@ function Navbar() {
 
                 <div className="Logohambergary">
 
-                    <button onClick={() => setOpenmenu(!Openmenu)} className="inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
+                    <button onClick={() => setOpenmenu(!Openmenu)} className=" max-[880px]:block inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base min-[880px]:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
                     </button>

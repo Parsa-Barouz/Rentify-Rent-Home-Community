@@ -40,7 +40,7 @@ export default function Selector() {
   return (
 
 
-    <div className="w-[40%] h-[90px] mx-auto mt-10 bg-white rounded-full flex overflow-hidden">
+    <div className="w-[60%] h-[90px]  max-[1228px]:w-[70%] max-[880px]:hidden   mx-auto mt-10 bg-white rounded-full flex overflow-hidden">
       <button className="px-12 bg-[#0D6EFD] text-white font-bold hover:bg-blue-700 transition cursor-pointer flex items-center gap-2">
         <svg  width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path  fillRule="evenodd" clipRule="evenodd"  d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="white"/>

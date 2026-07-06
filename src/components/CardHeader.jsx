@@ -7,7 +7,7 @@ function CardHeader({ image, title, count }) {
 
 
 
-    <div className="relative top-32 max-w-sm rounded-base  bg-neutral-primary-soft overflow-hidden">
+    <div className="relative rounded-base bg-neutral-primary-soft overflow-hidden w-full max-w-sm mx-auto">
    
       <a href="#">
         <img src={image}   alt="ویلا"  className="w-full rounded-t-base object-cover"   />
