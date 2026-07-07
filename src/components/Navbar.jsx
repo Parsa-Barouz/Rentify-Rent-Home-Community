@@ -1,7 +1,78 @@
+import Select from "react-select";
+import { cities } from "../Data";
+import { Contracttype } from "../Data";
+import { propertyTypes } from "../Data";
 import React, { useState } from 'react'
 function Navbar() {
+
     const [Openmenu, setOpenmenu] = useState(false);
     console.log(Openmenu);
+
+
+
+
+
+const selectStyles = {
+  container: (base) => ({
+    ...base,
+    width: "100%",
+    direction: "rtl",
+  }),
+
+  control: (base) => ({
+    ...base,
+    minHeight: 90,
+    height: 90,
+    border: "none",
+    borderRadius: 12,
+    boxShadow: "none",
+    direction: "rtl",
+    cursor: "pointer",
+  }),
+
+  valueContainer: (base) => ({
+    ...base,
+    height: 90,
+    padding: "0 16px",
+  direction: "rtl",  }),
+
+  input: (base) => ({
+    ...base,
+    direction: "rtl",
+    textAlign: "right",
+  }),
+
+  placeholder: (base) => ({
+    ...base,
+    textAlign: "right",
+  }),
+
+  singleValue: (base) => ({
+    ...base,
+    textAlign: "right",
+  }),
+
+  indicatorsContainer: (base) => ({
+    ...base,
+    height: 90,
+  }),
+
+  menu: (base) => ({
+    ...base,
+    direction: "rtl",
+    textAlign: "right",
+  }),
+
+  option: (base) => ({
+    ...base,
+    textAlign: "right",
+  }),
+
+  menuPortal: (base) => ({
+    ...base,
+    zIndex: 9999,
+  }),
+};
 
     return (
         <nav className='text-white mt-5'>
@@ -87,12 +158,12 @@ function Navbar() {
 
                 <div className="Logohambergary">
 
-                    <button onClick={() => setOpenmenu(!Openmenu)} className=" max-[880px]:block inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base min-[880px]:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
+                    <button onClick={() => setOpenmenu(!Openmenu)} className=" z-40  inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base min-[880px]:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
                     </button>
 
-                    <div className={`fixed top-0 right-0 h-screen w-64 bg-white transition-transform duration-300 z-10 ${Openmenu ? "translate-x-0" : "translate-x-full"
+                    <div className={`fixed top-0 right-0 h-screen w-64 bg-white  duration-300 z-10 ${Openmenu ? "translate-x-0" : "translate-x-full"
                         }
    `}>
                         <div className='py-4 px-4 cursor-pointer '>
@@ -106,7 +177,7 @@ function Navbar() {
                         </div>
 
 
-                        <ul className='mt-10 flex flex-col items-center gap-5 '>
+                        <ul className='mt-10 flex flex-col items-end gap-5 pr-4 cursor-pointer '>
 
                             <li className='cursor-pointer text-black' > <a href="#">   رهن و اجاره خانه  </a></li>
                             <li className='cursor-pointer text-black' > <a href="#">    مشاورین املاک </a></li>
@@ -115,7 +186,78 @@ function Navbar() {
 
                         </ul>
 
+
+
+
+
+<div className="flex flex-col  gap-4 w-full" dir="rtl">
+  <div className="flex-1">
+    <Select
+      styles={selectStyles}
+      options={Contracttype}
+      placeholder="نوع قرارداد"
+      isRtl
+      menuPortalTarget={document.body}
+      menuPosition="fixed"
+    />
+  </div>
+
+  <div className="flex-1">
+    <Select
+      styles={selectStyles}
+      options={propertyTypes}
+      placeholder="نوع ملک"
+      isRtl
+      menuPortalTarget={document.body}
+      menuPosition="fixed"
+    />
+  </div>
+
+  <div className="flex-1">
+    <Select
+      styles={selectStyles}
+      options={cities}
+      placeholder="موقعیت مکانی"
+      isRtl
+      menuPortalTarget={document.body}
+      menuPosition="fixed"
+    />
+  </div>
+</div>
+
+
+<div className="flex items-center cursor-pointer" >
+
+      <button className=" w-full py-3.5 bg-[#0D6EFD] text-white font-bold hover:bg-blue-700 transition cursor-pointer  mt-10 ">
+
+        <span >جستجو</span>
+
+      </button>
+</div>
+
+  
+
+
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 </div>
 
