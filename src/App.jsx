@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import react from 'react'
 import './App.css'
-import Header from '../src/components/Header'
+import Header from './components/Header'
+import PropertyCard from './components/PropertyCard';
 function App() {
+
+
   return(
 
-    <div className='container'>
+    <div className='container '>
 
 <Header/>
 
+<PropertyCard/>
     </div>
 
   )
