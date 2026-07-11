@@ -78,7 +78,7 @@ function Navbar() {
   return (
     <nav className='text-white mt-5 '>
 
-      <div className='flex items-center justify-around '>
+      <div className='flex items-center justify-evenly '>
 
 
         <div className="btn flex items-center gap-3">

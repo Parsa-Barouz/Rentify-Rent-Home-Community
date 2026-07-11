@@ -11,7 +11,9 @@
       "type": "آپارتمان",
       "bedrooms": 4,
       "bathrooms": 3,
-      "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png"
+      "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+            "Mortgage":900000,
+      "Rent":60000
     },
     {
       "id": 2,
@@ -21,7 +23,9 @@
       "type": "خانه ویلایی",
       "bedrooms": 2,
       "bathrooms": 2,
-      "image": "./src/assets/images/cardimages//photo_2024-08-27_13-06-05 3(2).png"
+      "image": "./src/assets/images/cardimages//photo_2024-08-27_13-06-05 3(2).png",
+            "Mortgage":700000,
+      "Rent":9000000
     },
     {
       "id": 3,
@@ -31,7 +35,9 @@
       "type": "آپارتمان",
       "bedrooms": 5,
       "bathrooms": 4,
-      "image": "./src/assets/images/cardimages///photo_2024-08-27_13-06-05 3(3).png"
+      "image": "./src/assets/images/cardimages///photo_2024-08-27_13-06-05 3(3).png",
+            "Mortgage":980000,
+      "Rent":9990000
     },
     {
       "id": 4,
@@ -41,7 +47,9 @@
       "type": "خانه ویلایی",
       "bedrooms": 6,
       "bathrooms": 5,
-      "image": "./src/assets/images/cardimages////photo_2024-08-27_13-06-05 3(4).png"
+      "image": "./src/assets/images/cardimages////photo_2024-08-27_13-06-05 3(4).png",
+            "Mortgage":6590000,
+      "Rent":8800000
     },
     {
       "id": 5,
@@ -51,7 +59,9 @@
       "type": "آپارتمان",
       "bedrooms": 2,
       "bathrooms": 1,
-      "image": "./src/assets/images/cardimages/////photo_2024-08-27_13-06-05 3(5).png"
+      "image": "./src/assets/images/cardimages/////photo_2024-08-27_13-06-05 3(5).png",
+            "Mortgage":45400000,
+      "Rent":100000
     },
   
 
@@ -63,7 +73,9 @@
       "type": "ویلا",
       "bedrooms": 3,
       "bathrooms": 2,
-      "image": "./src/assets/images/cardimages//////photo_2024-08-27_13-06-05 3(6).png"
+      "image": "./src/assets/images/cardimages//////photo_2024-08-27_13-06-05 3(6).png",
+            "Mortgage":6554000,
+      "Rent":105400
     },
     {
       "id": 7,
@@ -73,7 +85,9 @@
       "type": "ویلا",
       "bedrooms": 5,
       "bathrooms": 4,
-      "image": "./src/assets/images/cardimages///////photo_2024-08-27_13-06-05 3(7).png"
+      "image": "./src/assets/images/cardimages///////photo_2024-08-27_13-06-05 3(7).png",
+            "Mortgage":5000000,
+      "Rent":100000
     },
     {
       "id": 8,
@@ -83,7 +97,9 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
-      "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png"
+      "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png",
+      "Mortgage":41400000,
+      "Rent":102300
     }
 
 
