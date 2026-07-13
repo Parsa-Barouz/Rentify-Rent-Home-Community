@@ -21,7 +21,37 @@ const toggleFavorite = (id) => {
 };
  
   return (
+    <>
+    
+    
+    
+    <div className="more flex items-center justify-between flex-row-reverse mb-5">
 
+<h2 className="text-2xl font-bold">
+  پربازدیدترین‌های هفته گذشته
+</h2>
+
+<div className="morebtn ">
+
+<button className="flex items-center gap-1.5 cursor-pointer">
+  
+
+<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fillRule="evenodd" clipRule="evenodd" d="M1.5 5.20703H11V3.20703H1.5V5.20703Z" fill="#0D6EFD"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M2.41414 4.20711L5.20703 1.41421L3.79282 0L0.292818 3.5C-0.0977063 3.89052 -0.0977063 4.52369 0.292818 4.91421L3.79282 8.41421L5.20703 7L2.41414 4.20711Z" fill="#0D6EFD"/>
+</svg>
+
+<span className="text-[#0D6EFD]">
+  مشاهده همه
+</span>
+
+</button>
+
+
+</div>
+
+    </div>
+  
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
       {properties.map((item) => (
         <div
@@ -31,18 +61,15 @@ const toggleFavorite = (id) => {
           <img
             className="w-full h-56 object-cover"
             src={item.image}
-            alt={item.title}
+            alt={item.title}            
           />
 
 <button
   onClick={() => toggleFavorite(item.id)}
-  className="absolute top-3 right-3 bg-white/90 p-2 rounded-full shadow-md hover:scale-110 transition"
+  className="absolute top-3 right-3 bg-white/90 p-2 rounded-full shadow-md hover:scale-110 transition"  
 >
   {favorites.includes(item.id) ? "❤️" : "🤍"}
 </button>
-
-
-
 
 
 
@@ -115,6 +142,8 @@ const toggleFavorite = (id) => {
         </div>
       ))}
     </div>
+    </>
+      
   );
 }
 

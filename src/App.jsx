@@ -2,6 +2,7 @@ import react from 'react'
 import './App.css'
 import Header from './components/Header'
 import PropertyCard from './components/PropertyCard';
+import ServicesSection from './components/ServicesSection';
 function App() {
 
 
@@ -13,7 +14,7 @@ function App() {
 
 
 <PropertyCard/>
-
+<ServicesSection/>
 
     </div>
 
