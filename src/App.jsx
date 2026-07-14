@@ -14,6 +14,7 @@ function App() {
 
 
 <PropertyCard/>
+
 <ServicesSection/>
 
     </div>
