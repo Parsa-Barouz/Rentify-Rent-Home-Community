@@ -56,7 +56,7 @@ const toggleFavorite = (id) => {
       {properties.map((item) => (
         <div
           key={item.id}
-          className= " relative bg-white max-w-sm border border-gray-200 rounded-lg shadow-md overflow-hidden"
+          className= " relative bg-white max-w-sm border border-gray-200 rounded-lg  overflow-hidden"
         >
           <img
             className="w-full h-56 object-cover"

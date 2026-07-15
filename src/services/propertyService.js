@@ -9,3 +9,10 @@ export const getServiceCards = async () => {
   const response = await api.get("/serviceCards");
   return response.data;
 };
+
+
+
+export const getsteps = async () => {
+  const response = await api.get("/steps");
+  return response.data;
+};
