@@ -126,7 +126,7 @@ return(
 
 
 
-<div className="boxLoan  bg-gray-800">
+<div className="boxLoan  bg-gray-800 rounded-2xl">
 
 
 <div className="loan w-full grid grid-cols-2 items-center">
@@ -140,19 +140,28 @@ return(
 </div>
 
 <div className="text text-white flex flex-col items-end mr-15">
+<div className="textinformation">
 
 <h3 className="text-4xl bold">برای دریافت وام رهن خانه کلیک کنید</h3>
 
-<p className="mt-5 text-gray-500 ">دریافت وام با کمترین بهره و سریع ترین زمان ممکن</p>
+<p className="mt-5 text-gray-500 text-end ">دریافت وام با کمترین بهره و سریع ترین زمان ممکن</p>
+
+</div>
+
+
+<div className="btn">
+<button className="moreinformation bg-[#0D6EFD] mt-15 px-12 cursor-pointer rounded-2xl py-4"> اطلاعات بیشتر ... </button>
+</div>
+</div>
+
+
+
+
 
 </div>
 
 
 
-</div>
-
-
-
 
 </div>
 
@@ -160,18 +169,7 @@ return(
 <h3>fdgdfgfgfg</h3>
 <h3>fdgdfgfgfg</h3>
 <h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
-<h3>fdgdfgfgfg</h3>
+
     </>
   )
 }

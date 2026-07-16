@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import PropertyCard from './components/PropertyCard';
 import ServicesSection from './components/ServicesSection';
+import Footer from './components/Footer';
 function App() {
 
 
@@ -14,8 +15,8 @@ function App() {
 
 
 <PropertyCard/>
-
 <ServicesSection/>
+<Footer/>
 
     </div>
 
