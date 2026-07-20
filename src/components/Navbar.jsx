@@ -153,10 +153,6 @@ function Navbar() {
 
         </div>
 
-
-
-
-
         <div className="Logohambergary">
 
           <button onClick={() => setOpenmenu(!Openmenu)} className=" z-40  inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base min-[880px]:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
@@ -186,10 +182,6 @@ function Navbar() {
               <li className='cursor-pointer text-black' > <a href="#">    درباره رنتی فای </a> </li>
 
             </ul>
-
-
-
-
 
             <div className="flex flex-col  gap-4 w-full" dir="rtl">
               <div className="flex-1">

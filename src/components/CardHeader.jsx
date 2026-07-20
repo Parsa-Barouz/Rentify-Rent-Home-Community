@@ -3,16 +3,11 @@ import React from "react";
 function CardHeader({ image, title, count }) {
   return (
 
-
-
-
-
     <div className="relative rounded-base bg-neutral-primary-soft overflow-hidden w-full max-w-sm mx-auto">
 
       <a href="#">
         <img src={image} alt="ویلا" className="w-full rounded-t-base object-cover" />
       </a>
-
 
       <div className="absolute bottom-2 left-1/2 flex w-[90%] -translate-x-1/2 items-center justify-between rounded-lg bg-white px-5 py-3 shadow-md">
 
