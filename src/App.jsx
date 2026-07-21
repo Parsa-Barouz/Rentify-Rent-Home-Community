@@ -4,12 +4,13 @@ import Header from './components/Header'
 import PropertyCard from './components/PropertyCard';
 import ServicesSection from './components/ServicesSection';
 import Footer from './components/Footer/Footer';
+import PropertiesPage from './Properties/PropertiesPage';
 function App() {
 
 
   return (
     <>
-      <Header />
+      {/* <Header />
 
       <div className='mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8 '>
 
@@ -18,8 +19,10 @@ function App() {
         <ServicesSection />
         <Footer />
 
-      </div>
+      </div> */}
 
+
+<PropertiesPage/>
 
     </>
 
