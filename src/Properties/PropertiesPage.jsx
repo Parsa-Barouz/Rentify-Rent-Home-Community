@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import PropertiesNavbar from './PropertiesNavbar'
+import FilterBar from './FilterBar'
 function PropertiesPage() {
   return (
 
@@ -10,6 +11,7 @@ function PropertiesPage() {
 
 
 <PropertiesNavbar/>
+<FilterBar/>
 
 </div>
 
