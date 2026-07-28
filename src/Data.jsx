@@ -60,7 +60,48 @@ export const cards = [
     title: "خانه ویلایی",
     count: 18,
   },
+
+
+
+
+
 ];
+
+
+export const areaOptions = [
+  { value: "", label: "مهم نیست" },
+  { value: 30, label: "30 متر" },
+  { value: 40, label: "40 متر" },
+  { value: 50, label: "50 متر" },
+  { value: 60, label: "60 متر" },
+  { value: 70, label: "70 متر" },
+  { value: 80, label: "80 متر" },
+  { value: 90, label: "90 متر" },
+  { value: 100, label: "100 متر" },
+  { value: 120, label: "120 متر" },
+  { value: 150, label: "150 متر" },
+  { value: 200, label: "200 متر" },
+  { value: 250, label: "250 متر" },
+  { value: 300, label: "300 متر" },
+  { value: 500, label: "500+ متر" },
+];
+
+
+
+
+
+
+
+export const facilities = [
+  "پارکینگ",
+  "آسانسور",
+  "انباری",
+  "بالکن",
+  "مبله",
+  "استخر",
+  "نوساز",
+];
+
 
 
 

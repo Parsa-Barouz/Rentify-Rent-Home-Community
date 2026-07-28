@@ -172,7 +172,7 @@ return (
 
           <button onClick={() => setOpenmenu(!Openmenu)} className=" z-40  inline-flex items-center w-10 h-10 justify-center text-sm text-body rounded-base min-[880px]:hidden hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
             <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h14" /></svg>
           </button>
 
           <div className={`fixed top-0 right-0 h-screen w-64 bg-white  duration-300 z-10 ${Openmenu ? "translate-x-0" : "translate-x-full"
