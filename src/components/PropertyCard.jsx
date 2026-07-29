@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
 
-function PropertyCard() {
+function PropertyCard({title =" پربازدیدترین‌های هفته گذشته" , showButton = true, showLoadMore=false}) {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -24,14 +24,16 @@ function PropertyCard() {
     <>
 
 
-      <div className="more flex items-center justify-between flex-row-reverse mb-5">
+      <div className="more flex items-center justify-between flex-row-reverse mb-8 mt-10">
 
         <h2 className="text-2xl font-bold">
-          پربازدیدترین‌های هفته گذشته
-        </h2>
+ { title   } 
+
+       </h2>
 
         <div className="morebtn ">
-
+  {showButton && (
+    
           <button className="flex items-center gap-1.5 cursor-pointer">
 
 
@@ -45,8 +47,8 @@ function PropertyCard() {
             </span>
 
           </button>
-
-
+        )}
+        
         </div>
 
       </div>
@@ -128,6 +130,18 @@ function PropertyCard() {
           </div>
         ))}
       </div>
+
+
+{showLoadMore && (
+  <div className="btnmore flex justify-center mt-10">
+
+    <button className="bg-[#0D6EFD] px-3 py-3 flex items-center gap-2 cursor-pointer text-white rounded-md ">
+    نمایش بیشتر آگهی‌ها
+  </button>
+
+  </div>
+)}
+      
     </>
 
   );

@@ -23,48 +23,52 @@ const FilterBar = () => {
 
   const [rooms, setRooms] = useState(null);
 
-  const selectStyles = {
-    container: (base) => ({
-      ...base,
-      width: "220px",
-    }),
+const selectStyles = {
+  container: (base) => ({
+    ...base,
+    width: "220px",
+  }),
 
-    control: (base) => ({
-      ...base,
-      minHeight: "40px",
-      height: "40px",
-      border: "1px solid #e5e7eb",
-      borderRadius: "8px",
-      boxShadow: "none",
-      cursor: "pointer",
-    }),
+  control: (base) => ({
+    ...base,
+    minHeight: "40px",
+    height: "40px",
+    border: "1px solid #e5e7eb",
+    borderRadius: "8px",
+    boxShadow: "none",
+    cursor: "pointer",
+  }),
 
-    valueContainer: (base) => ({
-      ...base,
-      height: "40px",
-      padding: "0 10px",
-    }),
+  valueContainer: (base) => ({
+    ...base,
+    height: "40px",
+    padding: "0 10px",
+  }),
 
-    indicatorsContainer: (base) => ({
-      ...base,
-      height: "40px",
-    }),
+  indicatorsContainer: (base) => ({
+    ...base,
+    height: "40px",
+  }),
 
-    indicatorSeparator: () => ({
-      display: "none", 
-    }),
+  indicatorSeparator: () => ({
+    display: "none",
+  }),
 
-    dropdownIndicator: (base) => ({
-      ...base,
-      padding: "4px",
-    }),
+  dropdownIndicator: (base) => ({
+    ...base,
+    padding: "4px",
+  }),
 
-    menu: (base) => ({
-      ...base,
-      zIndex: 9999,
-    }),
-  };
+  menuPortal: (base) => ({
+    ...base,
+    zIndex: 99999,
+  }),
 
+  menu: (base) => ({
+    ...base,
+    zIndex: 99999,
+  }),
+};
   return (
     <>
 
@@ -107,7 +111,7 @@ const FilterBar = () => {
 </div>
 
           {open && (
-            <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
+            <div className="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
               <div className="bg-white p-5 rounded-lg ">
                 <div className="btnclose flex items-center justify-between flex-row-reverse">
 
@@ -177,6 +181,7 @@ const FilterBar = () => {
                             placeholder="انتخاب"
                             menuPortalTarget={document.body}
                             menuPosition="fixed"
+                            
                           />
                         </div>
 

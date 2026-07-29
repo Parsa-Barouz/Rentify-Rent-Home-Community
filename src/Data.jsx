@@ -103,6 +103,10 @@ export const facilities = [
 ];
 
 
-
+export const tabs = [
+  "پربازدیدترین",
+  "جدیدترین",
+  "ارزان‌ترین",
+];
 
 
