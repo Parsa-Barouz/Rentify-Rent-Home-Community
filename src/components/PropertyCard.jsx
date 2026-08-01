@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
 
-function PropertyCard({title =" پربازدیدترین‌های هفته گذشته" , showButton = true, showLoadMore=false}) {
+function PropertyCard({title =" پربازدیدترین‌های هفته گذشته" , showButton = true, showLoadMore=false , className=""}) {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -24,9 +24,9 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
     <>
 
 
-      <div className="more flex items-center justify-between flex-row-reverse mb-8 mt-10">
+      <div className="more flex items-center  max-sm:justify-center justify-between  flex-row-reverse mb-8 mt-10">
 
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-2xl font-bold  ">
  { title   } 
 
        </h2>
@@ -53,7 +53,7 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
 
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center  ">
         {properties.map((item) => (
           <div
             key={item.id}

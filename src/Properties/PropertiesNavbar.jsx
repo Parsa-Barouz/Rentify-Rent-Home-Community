@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FilterContent from "./FilterContent";
+import NavbarActions from "./NavbarActions";
 
 const PropertiesNavbar = () => {
   const [Openmenu, setOpenmenu] = useState(false);
@@ -14,72 +15,12 @@ const PropertiesNavbar = () => {
       )}
 
       <nav className="relative z-30 mt-5 rounded-md bg-white py-5">
-        <div className="grid grid-cols-[auto_1fr_auto] items-center gap-5 px-6">
+        <div className="grid grid-cols-[auto_1fr_auto] items-center gap-5 px-6 max-sm:justify-items-end">
           
-          <div className="flex items-center gap-3">
-            
-            <div className="flex cursor-pointer items-center gap-2 rounded-lg bg-[#0D6EFD] px-3 py-3">
-              <button className="cursor-pointer text-white">
-                ثبت آگهی رایگان
-              </button>
+          <div className="max-sm:hidden">
 
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M7.33325 14.6666V1.33331H8.66659V14.6666H7.33325Z"
-                  fill="white"
-                />
+<NavbarActions/>
 
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M14.6666 8.66665H1.33325V7.33331H14.6666V8.66665Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-
-            <div className="flex items-center gap-1">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
-                  fill="#0C0C0C"
-                />
-
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8ZM8 10C8 7.79086 9.79086 6 12 6C14.2091 6 16 7.79086 16 10C16 12.2091 14.2091 14 12 14C9.79086 14 8 12.2091 8 10Z"
-                  fill="#0C0C0C"
-                />
-
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M11.9994 16.5C9.77985 16.5 7.84046 17.7047 6.80152 19.5007L5.07031 18.4993C6.45204 16.1107 9.03706 14.5 11.9994 14.5C14.9618 14.5 17.5468 16.1107 18.9286 18.4993L17.1974 19.5007C16.1584 17.7047 14.219 16.5 11.9994 16.5Z"
-                  fill="#0C0C0C"
-                />
-              </svg>
-
-              <button className="cursor-pointer">
-                حساب من
-              </button>
-            </div>
           </div>
 
           <div className="hidden min-w-0 justify-center min-[1024px]:flex">
@@ -102,9 +43,9 @@ const PropertiesNavbar = () => {
             </ul>
           </div>
 
-          <div className="justify-self-end">
+          <div className="justify-self-start">
             
-            <div className="logosvg">
+            <div className="logosvg ">
 <svg width="132" height="52" viewBox="0 0 132 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M67.0015 4.11711C66.3567 3.87415 65.6433 3.87415 64.9985 4.11711L2.71589 27.5847C1.6844 27.9734 0.527937 27.4659 0.132853 26.4512C-0.26223 25.4364 0.253675 24.2988 1.28516 23.9101L63.5678 0.442547C65.1338 -0.147515 66.8662 -0.147516 68.4322 0.442547L130.715 23.9101C131.746 24.2988 132.262 25.4364 131.867 26.4512C131.472 27.4659 130.316 27.9734 129.284 27.5847L67.0015 4.11711Z" fill="#0C0C0C"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.2946 45.6073C39.8583 45.6223 38.6189 45.3489 37.5764 44.7874C36.5399 44.2198 35.7371 43.4113 35.1682 42.3619C34.5991 41.3065 34.3067 40.0545 34.291 38.6058C34.2757 37.1929 34.541 35.95 35.087 34.8771C35.6329 33.8042 36.4087 32.9644 37.4143 32.3577C38.4259 31.751 39.6166 31.4405 40.9862 31.4263C41.9073 31.4167 42.7664 31.5539 43.5635 31.8377C44.3665 32.1156 45.0682 32.5406 45.6683 33.1127C46.2746 33.6847 46.7491 34.4072 47.0919 35.2801C47.4347 36.147 47.6124 37.1647 47.6251 38.3332L47.6364 39.3795L38.1279 39.4782L38.128 39.4872C38.1354 40.1668 38.269 40.7527 38.5289 41.2448C38.7949 41.737 39.1657 42.1147 39.6413 42.3781C40.1169 42.6414 40.6789 42.7697 41.3274 42.763C41.7576 42.7585 42.1509 42.6948 42.5072 42.5719C42.8634 42.4489 43.1675 42.2669 43.4195 42.0258C43.6714 41.7847 43.8622 41.4906 43.9917 41.1434L47.5758 41.3387C47.4032 42.1871 47.0385 42.9303 46.4818 43.568C45.931 44.1998 45.2152 44.6961 44.3342 45.0571C43.4592 45.412 42.446 45.5954 41.2946 45.6073ZM38.4786 35.7631C38.2482 36.1725 38.124 36.6239 38.106 37.1174L43.9656 37.0565C43.9596 36.5081 43.8332 36.0234 43.5862 35.6027C43.3392 35.1819 42.9992 34.8545 42.5664 34.6206C42.1395 34.3805 41.6443 34.2635 41.0807 34.2693C40.4928 34.2754 39.9731 34.415 39.5215 34.688C39.0759 34.9549 38.7282 35.3133 38.4786 35.7631Z" fill="#0C0C0C"/>
@@ -145,6 +86,7 @@ const PropertiesNavbar = () => {
       <aside
         dir="rtl"
         className={`
+          
           fixed
           top-0
           right-0
@@ -243,16 +185,11 @@ const PropertiesNavbar = () => {
             </a>
           </li>
         </ul>
+<div className="sidebarbtn mt-3.5 flex justify-center ">
+<NavbarActions/>
 
-        <div className="px-4 py-6">
-          
-          <h3 className="mb-5 text-lg font-bold">
-            فیلتر ملک
-          </h3>
+</div>
 
-          <FilterContent />
-          
-        </div>
       </aside>
     </>
   );
