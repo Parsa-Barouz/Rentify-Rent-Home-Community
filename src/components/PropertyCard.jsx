@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
 
-function PropertyCard({title =" پربازدیدترین‌های هفته گذشته" , showButton = true, showLoadMore=false , className=""}) {
+function PropertyCard({title =" پربازدیدترین‌های هفته گذشته" , showButton = true, showLoadMore=true , className=""}) {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -19,6 +19,11 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
       setFavorites([...favorites, id]);
     }
   };
+
+
+
+const [visibleCount , setvisibleCount] = useState(8)
+console.log(setvisibleCount);
 
   return (
     <>
@@ -54,7 +59,11 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center  ">
-        {properties.map((item) => (
+        {   properties.slice(0,visibleCount).map((item)=>(
+
+// properties.map((item) => (
+
+
           <div
             key={item.id}
             className=" relative bg-white max-w-sm border border-gray-200 rounded-lg  overflow-hidden"
@@ -129,13 +138,16 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
             </div>
           </div>
         ))}
-      </div>
-
+           
+           </div>
+           
 
 {showLoadMore && (
-  <div className="btnmore flex justify-center mt-10">
 
-    <button className="bg-[#0D6EFD] px-3 py-3 flex items-center gap-2 cursor-pointer text-white rounded-md ">
+
+<div className="btnmore flex justify-center mt-10">
+
+    <button onClick={()=>setvisibleCount(visibleCount+4)} className="bg-[#0D6EFD] px-3 py-3 flex items-center gap-2 cursor-pointer text-white rounded-md ">
     نمایش بیشتر آگهی‌ها
   </button>
 

@@ -100,10 +100,97 @@
       "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png",
       "Mortgage":41400000,
       "Rent":102300
+    },
+
+    {
+      "id": 9,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages///////photo_2024-08-27_13-06-05 3(7).png",
+      "Mortgage":41400000,
+      "Rent":102300
+    },
+
+        {
+      "id": 10,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages////photo_2024-08-27_13-06-05 3(4).png",
+      "Mortgage":41400000,
+      "Rent":102300
+    },
+    {
+      "id": 11,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png",
+      "Mortgage":41400000,
+      "Rent":102300
+    },
+
+
+
+        {
+      "id": 12,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+      "Mortgage":41400000,
+      "Rent":102300
+    },
+
+
+            {
+      "id": 12,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+      "Mortgage":41400000,
+      "Rent":102300
+    },
+
+
+            {
+      "id": 12,
+      "title": "هفتاد متری دو خوابه-تهران محمدیه",
+      "location": "تهران الهیه",
+      "price": 1400,
+      "type": "خانه ویلایی",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+      "Mortgage":41400000,
+      "Rent":102300
     }
 
 
-    
+
+
+
+
+
+
+
   ],
 
 

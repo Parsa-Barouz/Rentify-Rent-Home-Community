@@ -16,7 +16,7 @@ function PropertiesPage() {
 <PropertiesNavbar/>
 <FilterBar/>
 <PropertySortTabs/>
-<PropertyCard title='رهن و اجاره آپارتمان در تهران' showButton={false}/>
+<PropertyCard title='رهن و اجاره آپارتمان در تهران' showButton={false} showLoadMore={false}/>
 <div className="search mt-20  ">
 
 <PropertyCard title='جستوجو های مشابه' showButton={false} showLoadMore={true} />
