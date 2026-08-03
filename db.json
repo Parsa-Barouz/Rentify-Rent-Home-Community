@@ -13,7 +13,9 @@
       "bathrooms": 3,
       "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
             "Mortgage":900000,
-      "Rent":60000
+      "Rent":60000,
+        "createdAt": "2026-06-20",
+        "views":230
     },
     {
       "id": 2,
@@ -25,7 +27,9 @@
       "bathrooms": 2,
       "image": "./src/assets/images/cardimages//photo_2024-08-27_13-06-05 3(2).png",
             "Mortgage":700000,
-      "Rent":9000000
+      "Rent":9000000,
+        "createdAt": "2026-09-20",
+        "views":78
     },
     {
       "id": 3,
@@ -37,7 +41,9 @@
       "bathrooms": 4,
       "image": "./src/assets/images/cardimages///photo_2024-08-27_13-06-05 3(3).png",
             "Mortgage":980000,
-      "Rent":9990000
+      "Rent":9990000,
+        "createdAt": "2026-05-20",
+        "views":487
     },
     {
       "id": 4,
@@ -49,7 +55,9 @@
       "bathrooms": 5,
       "image": "./src/assets/images/cardimages////photo_2024-08-27_13-06-05 3(4).png",
             "Mortgage":6590000,
-      "Rent":8800000
+      "Rent":8800000,
+        "createdAt": "2026-07-20",
+        "views":46
     },
     {
       "id": 5,
@@ -61,7 +69,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages/////photo_2024-08-27_13-06-05 3(5).png",
             "Mortgage":45400000,
-      "Rent":100000
+      "Rent":100000,
+        "createdAt": "2026-08-20",
+        "views":47
     },
   
 
@@ -75,7 +85,9 @@
       "bathrooms": 2,
       "image": "./src/assets/images/cardimages//////photo_2024-08-27_13-06-05 3(6).png",
             "Mortgage":6554000,
-      "Rent":105400
+      "Rent":105400,
+        "createdAt": "2026-04-20",
+        "views":230
     },
     {
       "id": 7,
@@ -87,7 +99,9 @@
       "bathrooms": 4,
       "image": "./src/assets/images/cardimages///////photo_2024-08-27_13-06-05 3(7).png",
             "Mortgage":5000000,
-      "Rent":100000
+      "Rent":100000,
+        "createdAt": "2026-07-10",
+        "views":15
     },
     {
       "id": 8,
@@ -99,7 +113,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-07-8",
+        "views":11000
     },
 
     {
@@ -112,7 +128,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages///////photo_2024-08-27_13-06-05 3(7).png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-11-20",
+        "views":457
     },
 
         {
@@ -125,7 +143,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages////photo_2024-08-27_13-06-05 3(4).png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-11-20",
+        "views":123
     },
     {
       "id": 11,
@@ -137,7 +157,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages////////photo_2024-08-27_13-06-05 3.png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-07-16",
+        "views":56
     },
 
 
@@ -152,12 +174,14 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-01-18",
+        "views":44
     },
 
 
             {
-      "id": 12,
+      "id": 13,
       "title": "هفتاد متری دو خوابه-تهران محمدیه",
       "location": "تهران الهیه",
       "price": 1400,
@@ -166,12 +190,14 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-01-20",
+        "views":230
     },
 
 
             {
-      "id": 12,
+      "id": 14,
       "title": "هفتاد متری دو خوابه-تهران محمدیه",
       "location": "تهران الهیه",
       "price": 1400,
@@ -180,7 +206,9 @@
       "bathrooms": 1,
       "image": "./src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
       "Mortgage":41400000,
-      "Rent":102300
+      "Rent":102300,
+        "createdAt": "2026-12-20",
+        "views":100
     }
 
 

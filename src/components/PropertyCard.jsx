@@ -10,8 +10,6 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
     });
   }, []);
 
-  const [favorites, setFavorites] = useState([]);
-
   const toggleFavorite = (id) => {
     if (favorites.includes(id)) {
       setFavorites(favorites.filter((item) => item !== id));
@@ -20,11 +18,20 @@ function PropertyCard({title =" پربازدیدترین‌های هفته گذ�
     }
   };
 
+const [favorites, setFavorites] = useState(() => {
+  const saved = localStorage.getItem("favorites");
 
-
+  return saved ? JSON.parse(saved) : [];
+});
 const [visibleCount , setvisibleCount] = useState(8)
-console.log(setvisibleCount);
 
+         useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
+ 
+
+
+  
   return (
     <>
 
@@ -61,7 +68,7 @@ console.log(setvisibleCount);
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center  ">
         {   properties.slice(0,visibleCount).map((item)=>(
 
-// properties.map((item) => (
+
 
 
           <div
@@ -140,9 +147,8 @@ console.log(setvisibleCount);
         ))}
            
            </div>
-           
 
-{showLoadMore && (
+{showLoadMore &&  properties.length > visibleCount &&(
 
 
 <div className="btnmore flex justify-center mt-10">
