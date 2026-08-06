@@ -13,7 +13,7 @@ function PropertiesPage() {
 
   const [properties, setProperties] = useState([]);
 
-  const [sort, setSort] = useState("ارزانترین");
+  const [sort, setSort] = useState("پربازدیدترین");
 
 
   useEffect(() => {

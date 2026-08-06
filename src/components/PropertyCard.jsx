@@ -222,9 +222,6 @@ function PropertyCard({
 
 
 
-
-
-
                 <h5 className="mt-4 text-sm font-bold text-gray-800">
 
 
@@ -232,10 +229,6 @@ function PropertyCard({
 
 
                 </h5>
-
-
-
-
 
 
                 <div className="mt-5 flex rounded-xl bg-gray-100 p-2">
@@ -284,8 +277,6 @@ function PropertyCard({
                     </p>
 
 
-
-
                     <p className="mt-1 text-lg font-bold text-blue-600">
 
 
@@ -294,33 +285,19 @@ function PropertyCard({
 
                     </p>
 
-
-
                     <span className="text-xs text-gray-400">
 
                       تومان
 
                     </span>
 
-
-
                   </div>
-
-
 
                 </div>
 
-
-
-
               </div>
 
-
-
-
             </div>
-
-
 
           ))
 
@@ -335,7 +312,6 @@ function PropertyCard({
 
           <div className="flex justify-center mt-10">
 
-
             <button
 
               onClick={()=>setVisibleCount(visibleCount + 4)}
@@ -346,13 +322,9 @@ function PropertyCard({
 
               نمایش بیشتر آگهی‌ها
 
-
             </button>
 
-
           </div>
-
-
 
         )
       }
@@ -363,6 +335,5 @@ function PropertyCard({
 
 
 }
-
 
 export default PropertyCard;
