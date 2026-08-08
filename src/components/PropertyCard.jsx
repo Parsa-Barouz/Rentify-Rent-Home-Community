@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
-
+import { Link } from "react-router-dom";
 
 function PropertyCard({
   title = "پربازدیدترین‌های هفته گذشته",
@@ -123,7 +123,9 @@ function PropertyCard({
 
 
               <span className="text-[#0D6EFD]">
-                مشاهده همه
+               <Link to="/properties">
+    مشاهده همه
+</Link>
               </span>
 
 
