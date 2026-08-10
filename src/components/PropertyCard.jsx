@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
-import { Link } from "react-router-dom";
+import { Link , NavLink } from "react-router-dom";
 
 function PropertyCard({
   title = "پربازدیدترین‌های هفته گذشته",
@@ -123,9 +123,17 @@ function PropertyCard({
 
 
               <span className="text-[#0D6EFD]">
-               <Link to="/properties">
+           <NavLink
+  to="/properties"
+  className={({ isActive }) => 
+  
+  isActive ? 'text-[#0D6EFD]' : 'text-gray-700'
+  
+  
+  }
+>
     مشاهده همه
-</Link>
+</NavLink >
               </span>
 
 
