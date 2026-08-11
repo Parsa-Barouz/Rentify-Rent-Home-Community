@@ -1,8 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { getProperties } from "../services/propertyService";
-import { Link , NavLink } from "react-router-dom";
-
+import { Link, NavLink, useNavigate } from "react-router-dom";
 function PropertyCard({
   title = "پربازدیدترین‌های هفته گذشته",
   showButton = true,
@@ -35,7 +34,7 @@ function PropertyCard({
   }, [propsProperties]);
 
 
-
+  const navigate = useNavigate();
 
 
   const [favorites, setFavorites] = useState(() => {
@@ -74,7 +73,7 @@ function PropertyCard({
 
 
       setFavorites(
-        favorites.filter((item)=> item !== id)
+        favorites.filter((item) => item !== id)
       );
 
 
@@ -93,8 +92,10 @@ function PropertyCard({
   };
 
 
-
-
+  const events = (event, id) => {
+    event.stopPropagation();
+    toggleFavorite(id);
+  };
 
 
   return (
@@ -123,17 +124,17 @@ function PropertyCard({
 
 
               <span className="text-[#0D6EFD]">
-           <NavLink
-  to="/properties"
-  className={({ isActive }) => 
-  
-  isActive ? 'text-[#0D6EFD]' : 'text-gray-700'
-  
-  
-  }
->
-    مشاهده همه
-</NavLink >
+                <NavLink
+                  to="/properties"
+                  className={({ isActive }) =>
+
+                    isActive ? 'text-[#0D6EFD]' : 'text-gray-700'
+
+
+                  }
+                >
+                  مشاهده همه
+                </NavLink >
               </span>
 
 
@@ -157,148 +158,81 @@ function PropertyCard({
 
 
         {
-          properties.slice(0,visibleCount).map((item)=>(
-
+          properties.slice(0, visibleCount).map((item) => (
 
             <div
               key={item.id}
-              className="relative bg-white max-w-sm border border-gray-200 rounded-lg overflow-hidden"
+              onClick={() => navigate(`/properties/${item.id}`)}
+              className="relative bg-white max-w-sm border border-gray-200 rounded-lg overflow-hidden cursor-pointer"
             >
 
-
-
               <img
-
                 className="w-full h-56 object-cover"
-
                 src={item.image}
-
                 alt={item.title}
-
               />
 
-
-
-
-
               <button
-
-                onClick={()=>toggleFavorite(item.id)}
-
+                onClick={(event) => events(event, item.id)}
                 className="absolute top-3 right-3 bg-white/90 p-2 rounded-full shadow-md hover:scale-110 transition"
-
               >
-
                 {
                   favorites.includes(item.id)
-                  ?
-                  "❤️"
-                  :
-                  "🤍"
+                    ? "❤️"
+                    : "🤍"
                 }
-
-
               </button>
-
-
-
-
-
 
               <div className="p-6 text-center">
 
-
                 <div className="flex justify-center items-center gap-3.5">
 
-
                   <p className="text-gray-500">
-
                     {item.location}
-
                   </p>
 
-
-
-
                   <span className="inline-flex items-center bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">
-
                     {item.type}
-
                   </span>
-
-
 
                 </div>
 
-
-
                 <h5 className="mt-4 text-sm font-bold text-gray-800">
-
-
                   {item.title}
-
-
                 </h5>
-
 
                 <div className="mt-5 flex rounded-xl bg-gray-100 p-2">
 
-
-
                   <div className="flex-1 rounded-lg bg-white p-3 text-center shadow-sm">
 
-
                     <p className="text-xs text-gray-500">
-
                       رهن
-
                     </p>
-
-
 
                     <p className="mt-1 text-lg font-bold text-gray-900">
-
                       {item.Mortgage}
-
                     </p>
 
-
-
                     <span className="text-xs text-gray-400">
-
                       تومان
-
                     </span>
-
 
                   </div>
 
-
                   <div className="w-2"></div>
-
 
                   <div className="flex-1 rounded-lg bg-white p-3 text-center shadow-sm">
 
-
                     <p className="text-xs text-gray-500">
-
                       اجاره
-
                     </p>
 
-
                     <p className="mt-1 text-lg font-bold text-blue-600">
-
-
                       {item.Rent}
-
-
                     </p>
 
                     <span className="text-xs text-gray-400">
-
                       تومان
-
                     </span>
 
                   </div>
@@ -310,8 +244,8 @@ function PropertyCard({
             </div>
 
           ))
-
         }
+
 
 
       </div>
@@ -324,7 +258,7 @@ function PropertyCard({
 
             <button
 
-              onClick={()=>setVisibleCount(visibleCount + 4)}
+              onClick={() => setVisibleCount(visibleCount + 4)}
 
               className="bg-[#0D6EFD] px-3 py-3 text-white rounded-md cursor-pointer"
 

@@ -8,8 +8,7 @@ const {id} = useParams();
 const [property, setProperty] = useState()
 useEffect(() => {
   getProperties().then((data) => {
-    console.log("ID from URL:", id);
-    console.log("DATA:", data);
+
 
     setProperty(
       data.find(property => property.id === id)
