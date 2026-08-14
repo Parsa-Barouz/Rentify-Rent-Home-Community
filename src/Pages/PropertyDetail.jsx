@@ -1,9 +1,9 @@
-import {React , useEffect, useState} from 'react'
-import { useParams  } from 'react-router-dom'
+import { React, useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { getProperties } from "../services/propertyService";
 import PropertiesNavbar from '../Properties/PropertiesNavbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { TelegramShareButton, TelegramIcon } from "react-share";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -13,91 +13,133 @@ import { Pagination } from 'swiper/modules';
 
 function PropertyDetail() {
 
-const {id} = useParams();
-const [property, setProperty] = useState()
-useEffect(() => {
-  getProperties().then((data) => {
+  const { id } = useParams();
+  const [property, setProperty] = useState()
+  useEffect(() => {
+    getProperties().then((data) => {
 
 
-    setProperty(
-data.find(property => property.id === id)
+      setProperty(
+        data.find(property => property.id === id)
 
 
-);
-  });
-}, []);
+      );
+    });
+  }, []);
 
-
+  const shareUrl = window.location.href;
 
   return (
 
 
     <>
-    
-<div className="container mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
 
-<PropertiesNavbar/>
+      <div className="container mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
 
-</div>
+        <PropertiesNavbar />
 
+      </div>
+      <div className="bg-white min-h-screen mt-10">
 
-<div className="section bg-white mt">
+        <div className="container mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
 
-<div className="slider">
+          <div className="section bg-white pt-10">
 
-
-
-      <Swiper
-        slidesPerView={5}
-        spaceBetween={3}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-
-{
-
-property?.images.map((image)=>{
-    console.log("IMAGE:", image);
-return(
-
-
-  <SwiperSlide> 
-          <img src={image} alt="" />
-
-        </SwiperSlide>
-)
-          
-
-
-})
-
-
-}
-
-    
-        {/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
-      </Swiper>
-
-
-</div>
+            <div className="slider">
 
 
 
-</div>
+              <Swiper
+                slidesPerView={2}
+                spaceBetween={10}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+
+                {
+
+                  property?.images.map((image) => {
+                    return (
+
+
+                      <SwiperSlide>
+                        <img src={image} alt="" className="w-full h-[400px] object-cover rounded-xl" />
+
+                      </SwiperSlide>
+                    )
 
 
 
-<h1>{property?.title}</h1>    
+                  })
+
+
+                }
+
+
+
+              </Swiper>
+
+
+            </div>
+
+            <div className="information">
+
+
+              <div className="Maininformation">
+
+                <div className="title">
+                  <h2>{property?.title}</h2>
+
+                </div>
+
+
+                <div className="like&shere">
+
+
+                  <TelegramShareButton url={shareUrl}>
+                    <TelegramIcon size={40} round />
+                  </TelegramShareButton>
+
+
+
+                </div>
+
+
+                <div className="location">
+
+                  <span>{property?.location}</span>
+
+                </div>
+
+                <div className="Mortgage">
+
+                  <span> رهن{property?.Mortgage} تومان</span>
+
+
+                </div>
+                <div className="Rent">
+
+                  <span> اجاره{property?.Rent} تومان</span>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* <h1>{property?.title}</h1> */}
     </>
   )
 }

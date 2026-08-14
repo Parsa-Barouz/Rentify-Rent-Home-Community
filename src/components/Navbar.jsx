@@ -236,23 +236,6 @@ function Navbar() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
       </div>

@@ -2,6 +2,7 @@
 
 
 {
+ 
   "properties": [
     {
       "id": 1,
@@ -11,7 +12,12 @@
       "type": "آپارتمان",
       "bedrooms": 4,
       "bathrooms": 3,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
@@ -30,10 +36,8 @@
       "type": "خانه ویلایی",
       "bedrooms": 2,
       "bathrooms": 2,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
       "images": [
-        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
-        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
-        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(2).png",
@@ -49,13 +53,17 @@
     },
     {
       "id": 3,
-      "title": "چهارصد متری سه خوابهه استخردار",
+      "title": "چهارصد متری سه خوابه استخردار",
       "location": "تهران الهیه",
       "price": 3200,
       "type": "آپارتمان",
       "bedrooms": 5,
       "bathrooms": 4,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(3).png",
@@ -74,7 +82,11 @@
       "type": "خانه ویلایی",
       "bedrooms": 6,
       "bathrooms": 5,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
@@ -93,7 +105,11 @@
       "type": "آپارتمان",
       "bedrooms": 2,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(5).png",
@@ -112,7 +128,11 @@
       "type": "ویلا",
       "bedrooms": 3,
       "bathrooms": 2,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(6).png",
@@ -131,7 +151,11 @@
       "type": "ویلا",
       "bedrooms": 5,
       "bathrooms": 4,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
@@ -150,7 +174,11 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
@@ -169,7 +197,11 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(7).png",
@@ -188,7 +220,10 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(4).png",
@@ -207,7 +242,11 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3.png",
@@ -226,7 +265,10 @@
       "type": "خانه ویلایی",
       "bedrooms": 1,
       "bathrooms": 1,
+      "image": "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
       "images": [
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
+        "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
         "/src/assets/images/cardimages/photo_2024-08-27_13-06-05 3(1).png",
@@ -236,24 +278,15 @@
       "Rent": 102300,
       "createdAt": "2026-01-18",
       "views": 44
-    },
-    {
-      "id": 13,
-      "title": "هفتاد متری دو خوابه-تهران محمدیه",
-      "location": "تهران الهیه",
-      "price": 1400,
-      "type": "خانه ویلایی",
-      "bedrooms": 1,
-      "bathrooms": 1
- 
-}
-
-
-
-
-
-
+    }
   ],
+
+
+
+
+
+
+  
 
 
 

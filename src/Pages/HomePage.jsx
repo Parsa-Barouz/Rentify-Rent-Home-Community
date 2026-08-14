@@ -11,7 +11,7 @@ function HomePage() {
 return (
     <>
 <Header/>
-<div className="mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8">
+<div className="mx-auto w-full max-w-[1500px] px-4 sm:px-6 lg:px-8 ">
   <PropertyCard  showLoadMore={false}/>
   <ServicesSection />
   <Footer />
